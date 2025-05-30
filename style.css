@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: peachpuff;
+  background-color: #101d30;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -11,7 +11,26 @@ body {
 
 nav {
   height: 4rem;
-  background-color: midnightblue;
+  background-color: #1d3457;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .add {
+    display: inline;
+    background-color: #5ba36a;
+    color: black;
+    padding: 2px 6px 4px 6px;
+    height: 24px;
+    /* width: 24px; */
+    border: 1px solid #000;
+    border-radius: 8px;
+  }
+
+  .add:hover {
+    background-color: #19fc7c;
+    border: 1px solid #fff;
+  }
 }
 
 .all-books {
@@ -24,33 +43,66 @@ nav {
 
 .book {
   height: 160px;
-  width: 260px;
-  /* border: 1px solid red; */
+  width: 160px;
   border-radius: 5px;
   padding: 10px;
-  display: flex;
-  background-color: royalblue;
+  background-color: #2e548a;
 
-  .img {
-    /* margin-top: 10px; */
-    /* margin-left: 10px; */
+  font-size: 18px;
+
+  select {
+    cursor: pointer;
+  }
+
+  p {
     padding: 0;
-    margin: 0;
-    margin-right: 10px;
-    height: 140px;
-    width: 100px;
-    overflow: hidden;
-
-    img {
-      height: 140px;
-    }
-  }
-
-  .info {
+    margin: 6px 0;
     font-size: 14px;
-
-    p {
-      font-size: 10px;
-    }
   }
+}
+
+.delete {
+  background-color: indianred;
+  margin-right: 8px;
+  height: 16px;
+  width: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid lightpink;
+  border-radius: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: 0.4ms;
+}
+
+.delete:hover {
+  background-color: palevioletred;
+  height: 18px;
+  width: 22px;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin: 16px 0;
+    margin-left: 16px;
+  }
+
+  input {
+    display: block;
+  }
+
+  label[for="read"] {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+  }
+}
+
+dialog {
+  border-color: #2e548a;
+  border-radius: 8px;
 }
