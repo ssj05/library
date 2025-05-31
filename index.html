@@ -1,58 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <nav>
-      <button class="add" type="button">Add-Books</button>
-    </nav>
-    <div class="all-books">
-      <div class="book b1">
-        <h4>title</h4>
-        <p>Author: author</p>
-        <p>Pages: 365</p>
-        <button class="delete" type="button">X</button>
-        <select>
-          <option value="read">read</option>
-          <option value="not-read">not read</option>
-        </select>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <dialog>
-      <form action="#" method="dialog" autocomplete="off">
-        <label for="title">
-          title
-          <input type="text" name="title" id="title" required />
-        </label>
-        <label for="author">
-          author
-          <input type="text" name="author" id="author" required />
-        </label>
-        <label for="pages">
-          pages
-          <input
-            type="number"
-            min="0"
-            max="10000"
-            name="pages"
-            id="pages"
-            required
-          />
-        </label>
-        <label for="read">
-          <small>check this if you have read the book.</small>
-          <input type="checkbox" id="read" />
-        </label>
+<body>
+  <nav>
+    <button class="add" type="button">Add-Books</button>
+  </nav>
+  <div class="all-books">
+    <!-- <div class="book b1"> -->
+    <!--   <h4>title</h4> -->
+    <!--   <p>Author: author</p> -->
+    <!--   <p>Pages: 365</p> -->
+    <!--   <button class="delete" type="button">X</button> -->
+    <!--   <select> -->
+    <!--     <option value="read">read</option> -->
+    <!--     <option value="not-read">not read</option> -->
+    <!--   </select> -->
+    <!-- </div> -->
+  </div>
+
+  <dialog>
+    <form action="#" method="dialog" autocomplete="off">
+      <label for="title">
+        title
+        <input type="text" name="title" id="title" required />
+      </label>
+      <label for="author">
+        author
+        <input type="text" name="author" id="author" required />
+      </label>
+      <label for="pages">
+        pages
+        <input type="number" min="0" max="10000" name="pages" id="pages" required />
+      </label>
+      <label for="read">
+        <small>check this if you have read the book.</small>
+        <input type="checkbox" id="read" name="status" value="yes" />
+      </label>
+      <div>
+        <button id="reset" type="reset">reset</button>
         <button id="addBook">add</button>
-      </form>
-    </dialog>
+      </div>
+    </form>
+  </dialog>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
